@@ -57,10 +57,12 @@ Restart=always
 RestartSec=5
 Type=simple
 Environment="NODE_ENV=production"
-Environment="NUT_HOST=localhost"
+Environment="NUT_HOST=192.168.1.20"
 Environment="NUT_PORT=3493"
 Environment="WEB_HOST=0.0.0.0"
 Environment="WEB_PORT=3000"
+Environment="USERNAME=upsadmin"
+Environment="PASSWORD=QAwsedrf"
 WorkingDirectory=/opt/peanut
 ExecStart=node /opt/peanut/.next/standalone/server.js
 TimeoutStopSec=30
